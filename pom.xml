@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.heavytiger.meowmall</groupId>
+    <artifactId>meowmall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>meowmall</name>
+    <description>聚合服务，将其他的pom文件聚合</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>meowmall-coupon</module>
+        <module>meowmall-member</module>
+        <module>meowmall-order</module>
+        <module>meowmall-product</module>
+        <module>meowmall-ware</module>
+    </modules>
+
+</project>
