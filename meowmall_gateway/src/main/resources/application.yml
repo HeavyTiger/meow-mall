@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: meowmall-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: leetcode_route
+          uri: https://leetcode-cn.com/
+          predicates:
+            - Query=url,leetcode
+
+        - id: blog_route
+          uri: https://heavytiger.github.io/
+          predicates:
+            - Query=url,blog
+server:
+  port: 88
+

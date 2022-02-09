@@ -1,0 +1,24 @@
+# 配置数据源
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.205.200:3306/meowmall_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: meowmall-product
+# 配置mybatis-plus
+mybatis-plus:
+  # 配置mapper.xml文件的位置
+  mapper-locations: classpath*:/mapper/**/*.xml
+  # 配置主键自动自增
+  global-config:
+    db-config:
+      id-type: auto
+# 配置端口
+server:
+  port: 12000
